@@ -2,7 +2,7 @@ import SoftScroll from './modules/soft_scroll.js';
 import Accordion from './modules/accordion.js';
 import TabNavigation from './modules/tab_navigation.js';
 import Modal from './modules/modal.js';
-import initTooltip from './modules/tooltip.js';
+import Tooltip from './modules/tooltip.js';
 import initDropdown from './modules/dropdown_menu.js';
 import initMenuMobile from './modules/menu_mobile.js';
 import initDateObject from './modules/date_object.js';
@@ -22,7 +22,9 @@ tabNavigation.init();
 const modal = new Modal('[data-modal="toOpen"]', '[data-modal="toClose"]', '[data-modal="container"]');
 modal.init();
 
-initTooltip();
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();
+
 initDropdown();
 initMenuMobile();
 initDateObject();
