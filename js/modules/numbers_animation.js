@@ -7,7 +7,7 @@ export default class NumbersAnimation {
     this.handleMutation = this.handleMutation.bind(this);
   }
 
-  // Receive a dom's element, with number in your text
+  // Receive a DOM's element, with number in your text
   // Increments from 0 until the final number
   static toIncrementNumber(number) {
     const total = +number.innerText;
@@ -24,7 +24,7 @@ export default class NumbersAnimation {
     }, 25 * Math.random());
   }
 
-  // Active toIncrementNumber for each selected number from dom
+  // Active toIncrementNumber for each selected number from DOM
   toAnimateNumbers() {
     this.numbers.forEach((number) => this.constructor.toIncrementNumber(number));
   }
