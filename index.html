@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais Fantáticos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:700|Playfair+Display+SC&display=swap" rel="stylesheet">
     <script>document.documentElement.className += ' js';</script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,7 +28,7 @@
                 </li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contato</a></li>
-                <li><a data-modal="toOpen" href="login.html">Login →</a></li>
+                <li><a data-modal="toOpen" href="login.html">Login <span class="arrow_black"></span></a></li>
             </ul>
         </nav>
         <section class="grid_section animals" data-animation="scroll" id="animals">
@@ -206,7 +206,7 @@
     </div>
     <section class="modal_container" data-modal="container">
         <div class="modal">
-            <button data-modal="toClose" class="toClose">X</button>
+            <button data-modal="toClose" class="toClose"></button>
             <form action="">
                 <label for="email">E-mail</label>
                 <input type="text" for="email" id="email">
