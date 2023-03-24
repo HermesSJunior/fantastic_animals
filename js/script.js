@@ -9,6 +9,7 @@ import DateObject from './modules/date_object.js';
 import fetchAnimals from './modules/fectch_animals.js';
 import fetchBitcoins from './modules/fetch_bitcoins.js';
 import ScrollAnimation from './modules/scroll_animation.js';
+import SlideNavigation from './modules/slide.js';
 
 const softScroll = new SoftScroll('[data-menu="soft"] a[href^="#"]');
 softScroll.init();
@@ -39,3 +40,7 @@ dateObject.init();
 
 fetchAnimals('./animalsAPI.json', '.numbers_grid');
 fetchBitcoins('https://blockchain.info/ticker', '.bitcoin_price');
+
+const slide = new SlideNavigation('.slide', '.slide_wrapper');
+slide.init();
+slide.addControl('.custom_controls');
